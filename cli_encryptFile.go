@@ -20,8 +20,5 @@ func (cli *CLI) encryptFile(fileToEncrypt, outputFile, keyFile string) {
 		log.Panic(err)
 	}
 	fmt.Printf("%s was encrypted and written into %s", fileToEncrypt, outputFile)
-
-	//dec, _ := decryptAES(key, encrypted)
-	//_ = ioutil.WriteFile("test.jpg", []byte(dec), 0644)
 }
 
